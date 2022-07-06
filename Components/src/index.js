@@ -9,10 +9,7 @@ const App = () => {
     return ( 
         <div className="ui conatainer comments"> 
             <CommentDetail />
-            <CommentDetail />
-            <CommentDetail />
-            <CommentDetail />
-            <CommentDetail />
+            
         </div>
     ) ;
 }
