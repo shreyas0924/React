@@ -7,7 +7,7 @@ const CommentDetail = (props) => {
     return(
         <div className="comment">
                 <a href="/" className="avatar">
-                    <img alt="avatar" src={faker.image.avatar()}></img>
+                    <img alt="avatar" src={props.image}></img>
                 </a>
             <div className="content">
                 <a href="/" alt="avatar">
@@ -16,7 +16,7 @@ const CommentDetail = (props) => {
                 <div className="metadata">
                     <span className="date">{props.timeAgo}</span>
                 </div>
-                <div className="text">Nice blog post</div>
+                <div className="text">{props.text}</div>
             </div>
             </div>
     );
