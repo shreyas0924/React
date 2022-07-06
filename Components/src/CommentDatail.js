@@ -11,7 +11,7 @@ const CommentDetail = () => {
                 </a>
             <div className="content">
                 <a href="/" alt="avatar">
-                    Sam
+                    Shubhankar
                 </a>
                 <div className="metadata">
                     <span className="date">Today at 6:00pm</span>
