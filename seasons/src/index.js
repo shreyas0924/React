@@ -24,7 +24,7 @@ class App extends React.Component{
     //WE HAVE TO DEFINE RENDER OR ELSE IT'LL THROW AN ERROR
     render(){
 
-
+        // conditional rendering
         if(this.state.errorMessage && !this.state.lat){
             return <div>Error: {this.state.errorMessage}</div>
         }
