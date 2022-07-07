@@ -1,6 +1,8 @@
 import React from "react";
 import ReacDom from "react-dom";
 import SeasonDisplay from "./SeasonDisplay"
+import Loading from "./loading"
+import "./seasonDisplay.css";
 
 
 
@@ -18,7 +20,7 @@ class App extends React.Component{
 
         // conditional rendering
         if(this.state.errorMessage && !this.state.lat){
-            return <div>Error: {this.state.errorMessage}</div>
+            return <h1> <div className="errorMessage">Error: {this.state.errorMessage}</div> </h1>
         }
 
         if(this.state.lat && !this.state.errorMessage){
@@ -27,7 +29,8 @@ class App extends React.Component{
             // We can take state from one component and pass it as prop down to the child.
             // If we call the setState, the component rerender itself but in addition the coomponent will also rerender any children that it is showing.
         }
-        return <div>Loading</div>
+
+        return <Loading />;
     }
 };
 
