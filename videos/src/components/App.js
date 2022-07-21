@@ -9,7 +9,7 @@ class App extends React.Component {
     state = {videos : [], selectedVideo: null};
 
     componentDidMount() { 
-        this.onTermSubmit('Pastime Scribbles')
+        this.onTermSubmit('mkbhd')
     }
 
     onTermSubmit = async(term) => {
